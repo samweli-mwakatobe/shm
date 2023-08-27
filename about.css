@@ -1,0 +1,719 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+#menu{
+	color: whitesmoke;
+	font-size: 30px;
+	display: none;
+	cursor: pointer;
+}
+#section{
+	background: grey;
+	width: 100%;
+	right: 0%;
+	right: 0%;
+	height: 10rem;
+	position: absolute;
+	display: block;
+	top: 6%;
+	display: none;
+	z-index: 10000;
+}
+#section a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+#sectiona a:hover{
+	cursor: pointer;
+	width: 100%;
+	height: 10px;
+	background: green;
+	color: yellow;
+}
+.background-image{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	background-image: url(about.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.about{
+	width: 100%;
+	height: 100vh;
+	background: #1b1717;
+	opacity: 0.9;
+}
+.container-nav{
+	width: 100%;
+	height: 13vh;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	padding: 3% 5%;
+	background: black;
+	opacity: 0.8;
+	border-bottom: 2px solid grey;
+}
+.container-nav h2{
+	font-size: 30px;
+	color: whitesmoke;
+	font-family: Lucida Handwriting;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+span{
+	font-family: Agency FB;
+	letter-spacing: 2px;
+	color: #ba8209;
+	font-weight: bold;
+}
+#navbar, #shm{
+	position: sticky;
+	top: 50px;
+}
+.navigation a{
+	color: whitesmoke;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 20px;
+	margin-left: 50px;
+	font-family: Copperplate Gothic Light;
+	letter-spacing: 2px;
+	font-weight: 900px;
+	position: relative;
+	transition: transform .4s;
+}
+.navigation a i{
+	margin-right: 10px;
+}
+.container-nav .navigation a::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	background: #ba8209;
+	border-radius: 5px;
+	bottom: -6px;
+	left: 0;
+	transform-origin: right;
+	transform: scaleX(0);
+	transition: transform .4s;
+}
+.container-nav .navigation a.active::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	background: #ba8209;
+	border-radius: 5px;
+	bottom: -6px;
+	left: 0;
+
+}
+.container-nav .navigation a:hover::after{
+	transform: scaleX(1.0);
+	transform-origin: left;
+}
+.about-me{
+	width: 95%;
+	height: 50vh;
+	
+	position: absolute;
+	top: 15%;
+	left: 2.5%;
+}
+.about-me-1{
+	width: 95%;
+	height: 35vh;
+	position: absolute;
+	top: 65%;
+	left: 2.5%;
+}
+.about-me-image{
+	position: absolute;
+	width: 500px;
+	height: 46vh;
+	right: 3%;
+	top: 5%;
+	background: url(about.jpg);
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px;
+}
+.about-me-text{
+	position: absolute;
+	width: 800px;
+	height: 46vh;
+	left: 5%;
+	top: 5%;
+}
+.about-me-text h1{
+	text-align: center;
+	margin-top: 30px;
+	font-size: 50px;
+	font-family: Copperplate Gothic Light;
+	letter-spacing: 4px;
+	font-weight: 5000px;
+	color: whitesmoke;
+}
+#e{
+	font-size: 40px;
+}
+.line{
+	width: 150px;
+	height: 8px;
+	border-radius: 15px;
+	background: #ba8209;
+	position: absolute;
+	top: 27%;
+	left: 40%;
+}
+.about-me-text p{
+	position: absolute;
+	top: 38%;
+	font-size: 20px;
+	font-family: lucida fax;
+	color: whitesmoke;
+	line-height: 30px;
+	text-align: center;
+	letter-spacing: 2px;
+}
+.about-me-1-text{
+	position: absolute;
+	width: 93%;
+	height: 34vh;
+	top: 0%;
+	left: 3%;
+}
+.about-me-1-text h3{
+	position: absolute;
+	text-align: center;
+	font-size: 39px;
+	font-family: Copperplate Gothic Light;
+	left: 27%;
+	letter-spacing: 3px;
+	color: whitesmoke;
+}
+..about-me-1 .about-me-1-text .card{
+	position: relative;
+	width: 93%;
+	height: 34vh;
+	top: 0%;
+	left: 3%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	flex-direction: column-reverse;
+	
+}
+.about-me-1-text .card .card1{
+	position: absolute;
+	width: 350px;
+	height: 25vh;
+	top: 25%;
+	border: 3px solid lightblue;
+	border-radius: 20px;
+}
+.about-me-1-text .card .card2{
+position: absolute;
+	width: 350px;
+	height: 25vh;
+	top: 25%;
+	right: 0%;
+	border: 3px solid lightblue;
+	border-radius: 20px;
+}
+.about-me-1-text .card .card3{
+	position: absolute;
+	width: 350px;
+	height: 25vh;
+	top: 25%;
+	align-content: center;
+	align-items: center;
+	left: 37%;
+	border: 3px solid lightblue;
+	border-radius: 20px;
+}
+.card1 h1{
+	text-align: center;
+	margin-top: 10px;
+	font-family: Copperplate Gothic Light;
+	letter-spacing: 3px;
+	position: relative;
+	color: orange;
+}
+.card1 h1::after{
+	content: '';
+	width: 20%;
+	height: 3px;
+	position: absolute;
+	left: 50%;
+	background: powderblue;
+	bottom: -10px;
+	border-radius: 10px;
+	transform: translateX(-50%);
+}
+.card1 p{
+	position: absolute;
+	top: 35%;
+	line-height: 25px;
+	font-size: 18px;
+	font-family: lucida fax;
+	text-align: center;
+	color: whitesmoke;
+}
+.card2 h1{
+	text-align: center;
+	margin-top: 10px;
+	color: orange;
+	font-family: Copperplate Gothic Light;
+	letter-spacing: 3px;
+	position: relative;
+}
+.card2 h1::after{
+	content: '';
+	width: 20%;
+	height: 3px;
+	position: absolute;
+	left: 50%;
+	background: powderblue;
+	bottom: -10px;
+	border-radius: 10px;
+	transform: translateX(-50%);
+}
+.card2 p{
+	position: absolute;
+	top: 35%;
+	line-height: 25px;
+	font-size: 18px;
+	font-family: lucida fax;
+	text-align: center;
+	color: whitesmoke;
+}
+.card3 h1{
+	text-align: center;
+	margin-top: 10px;
+	font-family: Copperplate Gothic Light;
+	letter-spacing: 3px;
+	position: relative;
+	color: orange;
+}
+.card3 h1::after{
+	content: '';
+	width: 20%;
+	height: 4px;
+	position: absolute;
+	left: 50%;
+	background: powderblue;
+	bottom: -10px;
+	border-radius: 10px;
+	transform: translateX(-50%);
+}
+.card3 p{
+	position: absolute;
+	top: 35%;
+	line-height: 25px;
+	font-size: 18px;
+	font-family: lucida fax;
+	text-align: center;
+	color: whitesmoke;
+}
+
+
+@media only screen and (max-width: 450px){
+	#background-image{
+		max-width: 600px;
+		height: 250vh;
+	}
+	#about{
+		max-width: 600px;
+		height: 250vh;
+	}
+	.container-nav{
+		max-width: 600px;
+	}
+	.navigation a{
+		display: none;
+	}
+	#menu{
+		display: block;
+	}
+	.about-me{
+		max-width: 400px;
+	}
+	.about-me-text{
+		height: 100vh;
+	}
+	#why{
+		margin-left: -100px;
+	}
+	#card{
+		margin-left: -70px;
+	}
+	#abt{
+		margin-left: -150px;
+	}
+	.about-me-text h1{
+		font-size: 40px;
+		margin-top: -100px;
+	}
+	#line{
+		margin-top: -260px;
+		margin-left: -100px;
+	}
+	.about-me-image{
+		margin-left: -50px;
+	}
+	.about-me-text p{
+		max-width: 290px;
+		text-align: justify;
+	}
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.background-image{
+		max-width: 600px;
+		height: 220vh;
+	}
+	.about{
+		max-width: 600px;
+		height: 220vh;
+	}
+	.container-nav{
+		max-width: 600px;
+	}
+	.navigation a{
+		display: none;
+	}
+	#menu{
+		display: block;
+	}
+	.about-me{
+		max-width: 400px;
+	}
+	.about-me-text{
+		height: 100vh;
+	}
+	.about-me-text h1{
+		font-size: 40px;
+		margin-top: -100px;
+		margin-left: -300px;
+	}
+	.about-me-text .line{
+		margin-top: -260px;
+		margin-left: -50px;
+	}
+	.about-me-image{
+		margin-top: 0px;
+		position: absolute;
+		left: 10%;
+		width: 350px;
+		height: 250px;
+	}
+	.about-me-text{
+		width: 400px;
+	}
+	.about-me-text h1{
+		margin-left: 50px;
+		font-size: 40px;
+	}
+	.line{
+		margin-left: 20px;
+	}
+	.about-me-text p{
+		width: 390px;
+		font-size: 17px;
+		margin-left: 5px;
+		margin-top: -40px;
+		text-align: justify;
+	}
+	.about-me-1{
+		margin-top: -150px;
+		width: 400px;
+	}
+	.about-me-1 h3{
+		font-size: 30px;
+		margin-left: -100px;
+	}
+	.about-me-1-text h3{
+		font-size: 25px;
+		margin-left: 10px;
+	}
+	.about-me-1 .card{
+		margin-top: 70px;
+		display: block;
+		max-width: 400px;
+		margin-left: -50px;
+	}
+	.card1{
+		left: 80px;
+	}
+	.card2{
+		margin-top: 210px;
+		left: 80px;
+	}
+	.card3{
+		margin-top: 420px;
+		margin-left: -66px;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+	.background-image{
+		height: 220vh;
+	}
+	.about{
+		height: 220vh;
+	}
+	.navigation a{
+		display: none;
+	}
+	#menu{
+		display: block;
+	}
+	.about-me-text h1{
+		font-size: 40px;
+		margin-top: -100px;
+		margin-left: -160px;
+	}
+	.about-me-text .line{
+		margin-top: -140px;
+		margin-left: -70px;
+	}
+	.about-me-image{
+		margin-top: 0px;
+		position: absolute;
+		left: 15%;
+		width: 400px;
+		height: 350px;
+	}
+	.about-me-text{
+		width: 500px;
+	}
+	.about-me-text p{
+		width: 500px;
+		font-size: 17px;
+		margin-left: 20px;
+		margin-top: 250px;
+	}
+	.about-me-1{
+		margin-top: -130px;
+		margin-left: 40px;
+		width: 501px;
+	}
+	.about-me-1 h3{
+		font-size: 30px;
+		margin-left: -100px;
+	}
+	.about-me-1 .card{
+		margin-top: 60px;
+		display: block;
+		max-width: 400px;
+	}
+	.card1{
+		left: 80px;
+	}
+	.card2{
+		margin-top: 210px;
+		left: 80px;
+	}
+	.card3{
+		margin-top: 420px;
+		margin-left: -66px;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.navigation a{
+		display: none;
+	}
+	#menu{
+		display: block;
+	}
+	.about-me-text{
+		width: 750px;
+	}
+	#parat{
+		width: 660px;
+	}
+	.about-me-text h1{
+		font-size: 50px;
+		margin-top: -100px;
+		margin-left: 30px;
+	}
+	.about-me-text .line{
+		margin-top: -140px;
+		margin-left: -0px;
+	}
+	.about-me-image{
+		margin-top: 0px;
+		position: absolute;
+		left: 15%;
+		width: 500px;
+		height: 400px;
+	}
+	.about-me-text p{
+		width: 660px;
+		font-size: 17px;
+		margin-left: 20px;
+		margin-top: 300px;
+		text-align: justify;
+	}
+	.about-me-1{
+		margin-top: -70px;
+		margin-left: 40px;
+		width: 660px;
+	}
+	.about-me-1 h3{
+		font-size: 30px;
+		margin-left: -50px;
+	}
+	.card1{
+		left: -20px;
+		width: 100px;
+	}
+	.card2{
+		margin-top: 0px;
+		left: 370px;
+		max-width: 300px;
+	}
+	.card2 p{
+		font-size: 16px;
+	}
+	.card3{
+		margin-top: 220px;
+		margin-left: -150px;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.navigation a{
+		display: unset;
+	}
+	#menu{
+		display: none;
+	}
+	.about-me-text h1{
+		font-size: 50px;
+		margin-top: -60px;
+		margin-left: -500px;
+	}
+	.about-me-text .line{
+		margin-top: -100px;
+		margin-left: -290px;
+	}
+	.about-me-image{
+		margin-top: 0px;
+		position: absolute;
+		left: 57%;
+		width: 400px;
+		height: 350px;
+	}
+	.about-me-text p{
+		width: 500px;
+		font-size: 17px;
+		margin-left: -20px;
+		margin-top: -130px;
+		text-align: justify;
+	}
+	.about-me-1{
+		margin-top: -130px;
+		margin-left: 40px;
+		width: 892px;
+	}
+	.about-me-1 h3{
+		font-size: 37px;
+		margin-left: -50px;
+	}
+	.card1{
+		left: -20px;
+	}
+	.card2{
+		margin-top: 0px;
+		left: 370px;
+	}
+	.card3{
+		margin-top: 220px;
+		margin-left: -150px;
+	}
+	.background-image{
+		height: 130vh;
+	}
+	.about{
+		height: 130vh;
+	}
+}
+
+/* Extra-large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.background-image{
+		height: 100vh;
+	}
+	.about{
+		height: 100vh;
+	}
+	.navigation a{
+		display: unset;
+	}
+	#menu{
+		display: none;
+	}
+	.about-me-text h1{
+		font-size: 50px;
+		margin-top: 0px;
+		margin-left: -500px;
+	}
+	.about-me-text .line{
+		margin-top: -40px;
+		margin-left: -290px;
+	}
+	.about-me-image{
+		margin-top: 0px;
+		position: absolute;
+		left: 57%;
+		width: 500px;
+		height: 350px;
+	}
+	.about-me-text p{
+		width: 600px;
+		font-size: 17px;
+		margin-left: -20px;
+		margin-top: -30px;
+		text-align: justify;
+	}
+	.about-me-1{
+		margin-top: -0px;
+		margin-left: 40px;
+		width: 1100px;
+	}
+	.about-me-1 h3{
+		font-size: 37px;
+		margin-left: -50px;
+	}
+	.card1{
+		left: -20px;
+	}
+	.card2{
+		margin-top: 0px;
+		left: 380px;
+	}
+	.card3{
+		margin-top: 0px;
+		margin-left: 560px;
+	}
+}

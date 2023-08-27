@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image" href="logo.png">
+	<title>contact</title>
+	<link rel="stylesheet" type="text/css" href="contact.css">
+	<script src="https://kit.fontawesome.com/2a56057606.js" crossorigin="anonymous"></script>
+	<script src="js/jquery.js"></script>
+	<link rel="stylesheet" href="fonts-6/css/all.css">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<script
+  src="https://code.jquery.com/jquery-3.7.0.min.js"
+  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="background-image">
+	<div class="about">
+		<div class="container-nav">
+				<h2 id="shm">SHM <span>DEVELOPER</span></h2>
+		<nav class="navigation" id="navbar">
+			<a href="index.html"><i class="fa-solid fa-house-chimney"></i>Home</a>
+			<a href="about.html"><i class="fa-solid fa-user"></i>About Me</a>
+			<a href="#"class="active"><i class="fa-solid fa-phone"></i>Contact</a>
+			<i class="fa-sharp fa-solid fa-bars menu" id="menu"></i>
+		</nav>
+		<div class="contact">
+			<h1>CONTACT<span>S</span></h1>
+			<p>You can find me throug my contact below for any issues about designing if you see that is important thing for you in your business or organization. And you can send your message below for more conversation with you and to get more detail or information about on how a website is very important in now days and also you can send you opinion or comment to us and we will direct response to you <span>THANK YOU</span> and <span>WELCOME.</span></p>
+		</div>
+		<div class="contact-form">
+			<form>
+					<input type="text" name="full_name" placeholder="Full Name">
+					<input type="email" name="email" placeholder="Email"><br>
+					<textarea cols="60" rows="10" placeholder="write your message here"></textarea><br>
+					<button type="submit">SEND</button>
+			</form>
+		</div>
+
+		<section id="section">
+			<head>
+				<a href="index.html" class="active">Home</a>
+			<a href="about.html">About Me</a>
+			<a href="contact.html">Contact</a>
+			</head>
+		</section>
+		<script>
+			$(document).ready(function(){
+				$("#menu").click(function(){
+					$("#section").slideToggle();
+				});
+			});
+
+			$(window).on("scroll", function(){
+				if ($(window).scrollTop()) {
+					$("section").addClass("fixsection");
+				}else{
+					$("section").removeClass("fixsection");
+				}
+			});
+		</script>
+		<div class="contact-icon">
+			<h5><i class="fa-solid fa-globe"></i> S.L.P 8456, Kimara Bonyokwa, Dare Es Salaam.</h5>
+			<h5><i class="fa-brands fa-whatsapp"></i> +255 676 641 191</h5>
+			<h5><i class="fa-brands fa-instagram"></i> shm_for_future</h5>
+			<h5><i class="fa-brands fa-twitter"></i> shm_for_future</h5>
+			<h5><i class="fa-brands fa-facebook"></i> shm_org</h5>
+		</div>
+		</div>
+	</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

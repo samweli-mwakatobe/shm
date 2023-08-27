@@ -1,0 +1,409 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+#menu{
+	color: whitesmoke;
+	font-size: 30px;
+	display: none;
+	cursor: pointer;
+}
+#section{
+	background: grey;
+	width: 100%;
+	right: 0%;
+	right: 0%;
+	height: 10rem;
+	position: absolute;
+	display: block;
+	top: 100%;
+	display: none;
+	z-index: 10000;
+}
+#section a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+.background-image{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	background-image: url(look.jpg);
+	background-size: cover;
+}
+.about{
+	width: 100%;
+	height: 100vh;
+	background: #1b1717;
+	opacity: 0.9;
+}
+.container-nav{
+	width: 100%;
+	height: 13vh;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	padding: 3% 5%;
+	background: black;
+	opacity: 0.8;
+	border-bottom: 2px solid grey;
+}
+.container-nav h2{
+	font-size: 30px;
+	color: whitesmoke;
+	font-family: Lucida Handwriting;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+span{
+	font-family: Agency FB;
+	letter-spacing: 2px;
+	color: #ba8209;
+	font-weight: bold;
+}
+#navbar, #shm{
+	position: sticky;
+	top: 50px;
+}
+.navigation a{
+	color: whitesmoke;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 20px;
+	margin-left: 50px;
+	font-family: Copperplate Gothic Light;
+	letter-spacing: 2px;
+	font-weight: 900px;
+	position: relative;
+	transition: transform .4s;
+}
+.navigation a i{
+	margin-right: 10px;
+}
+.container-nav .navigation a::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	background: #ba8209;
+	border-radius: 5px;
+	bottom: -6px;
+	left: 0;
+	transform-origin: right;
+	transform: scaleX(0);
+	transition: transform .4s;
+}
+.container-nav .navigation a.active::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	background: #ba8209;
+	border-radius: 5px;
+	bottom: -6px;
+	left: 0;
+
+}
+.container-nav .navigation a:hover::after{
+	transform: scaleX(1.0);
+	transform-origin: left;
+}
+.contact{
+	position: absolute;
+	width: 90%;
+	height: 30vh;
+	left: 5%;
+	top: 20vh;
+}
+.contact h1{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 45px;
+	font-family: Copperplate Gothic Light;
+	letter-spacing: 4px;
+	position: relative;
+	color: whitesmoke;
+}
+.contact h1::after{
+	content: '';
+	width: 10%;
+	height: 5px;
+	position: absolute;
+	background: #ba8209;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 19px;
+	bottom: -10px;
+}
+.contact p{
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	font-family: lucida fax;
+	color: white;
+	margin-top: 30px;
+}
+.contact-form{
+	position: absolute;
+	width: 45%;
+	height: 50vh;
+	top: 50vh;
+	right: 5%;
+}
+.contact-form form{
+	position: absolute;
+	top: 10%;
+	left: 10px;
+}
+.contact-form form input{
+	width: 320px;
+	height: 50px;
+	margin-right: 17px;
+	margin-bottom: 30px;
+	border: 1px solid powderblue;
+	outline: none;
+	background: transparent;
+	border-radius: 5px;
+}
+.contact-form form input[type=text], input[type=email]{
+	font-size: 17px;
+	padding: 10px;
+	letter-spacing: 2px;
+	font-family: lucida fax;
+	color: whitesmoke;
+}
+.contact-form form input:hover{
+	border: 3px solid lightblue;
+}
+.contact-form form textarea{
+	border: 1px solid powderblue;
+	outline: none;
+	background: transparent;
+	border-radius: 5px;
+	padding: 10px 10px;
+	font-family: lucida fax;
+	font-size: 17px;
+	letter-spacing: 2px;
+	color: whitesmoke;
+}
+.contact-form form textarea:hover{
+	border: 2px solid lightblue;
+}
+.contact-form form button{
+	position: absolute;
+	right: 7%;
+	width: 100px;
+	height: 45px;
+	font-size: 17px;
+	letter-spacing: 2px;
+	font-family: lucida fax;
+	border: none;
+	outline: none;
+}
+.contact-form form button:hover{
+	cursor: pointer;
+	background: #ba8209;
+}
+.contact-icon{
+	width: 50%;
+	height: 400px;
+	position: absolute;
+	left: 5%;
+	margin-top: 40vh;
+	z-index: -1;
+}
+.contact-icon h5{
+	font-size: 20px;
+	margin-top: 50px;
+	margin-left: 20px;
+	font-family: Copperplate Gothic Light;
+	color: whitesmoke;
+	letter-spacing: 2px;
+}
+.contact-icon h5 i{
+	margin-right: 10px;
+	color: #ba8209;
+	font-size: 30px;
+
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.background-image{
+		height: 200vh;
+	}
+	.about{
+		height: 200vh;
+	}
+	.navigation a{
+		display: none;
+	}
+	.container-nav h2{
+		margin-top: 20px;
+	}
+	#menu{
+		display: block;
+		margin-right: 25px;
+		margin-top: 15px;
+	}
+	.contact h1{
+		font-size: 25px;
+	}
+	.contact p{
+		font-size: 16px;
+	}
+	.contact-icon{
+		top: 180%;
+		line-height: 30px;
+	}
+	.contact-icon h5{
+		font-size: 16px;
+	}
+	.contact-form {
+		margin-top: 680px;
+		left: 4%;
+	}
+	form textarea{
+		width: 320px;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+	.navigation a{
+		display: none;
+	}
+	#menu{
+		display: block;
+	}
+	.background-image{
+		height: 200vh;
+	}
+	.about{
+		height: 200vh;
+	}
+	.contact h1{
+		font-size: 30px;
+	}
+	.contact p{
+		font-size: 18px;
+	}
+	.contact-icon{
+		top: 150%;
+		line-height: 30px;
+	}
+	.contact-form {
+		margin-top: 680px;
+		left: 4%;
+	}
+	form textarea{
+		width: 500px;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.navigation a{
+		display: none;
+	}
+	#menu{
+		display: block;
+	}
+	.background-image{
+		height: 200vh;
+	}
+	.about{
+		height: 200vh;
+	}
+	.contact h1{
+		font-size: 35px;
+	}
+	.contact p{
+		font-size: 20px;
+	}
+	.contact-icon{
+		top: 150%;
+		line-height: 30px;
+	}
+	.contact-form {
+		margin-top: 680px;
+		left: 4%;
+	}
+	form textarea{
+		width: 500px;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.navigation a{
+		display: unset;
+	}
+	#menu{
+		display: none;
+	}
+	.background-image{
+		height: 200vh;
+	}
+	.about{
+		height: 200vh;
+	}
+	.contact h1{
+		font-size: 40px;
+	}
+	.contact p{
+		font-size: 20px;
+	}
+	.contact-icon{
+		top: 150%;
+		line-height: 30px;
+	}
+	.contact-form {
+		margin-top: 680px;
+		left: 4%;
+	}
+	form textarea{
+		width: 600px;
+	}
+}
+
+/* Extra-large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.navigation a{
+		display: unset;
+	}
+	#menu{
+		display: none;
+	}
+	.background-image{
+		height: 100vh;
+	}
+	.about{
+		height: 100vh;
+	}
+	.contact h1{
+		font-size: 45px;
+	}
+	.contact p{
+		font-size: 20px;
+	}
+	.contact-icon{
+		top: 30%;
+		line-height: 0px;
+	}
+	.contact-form {
+		margin-top: 0px;
+		left: 50%;
+	}
+	form textarea{
+		width: 600px;
+		height: 140px;
+	}
+}
